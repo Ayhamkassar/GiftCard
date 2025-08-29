@@ -117,12 +117,13 @@
   <!-- FLOWER + PARTICLES -->
   <canvas id="magicParticles"></canvas>
 <div class="flower-message" id="flowerMessage" style="display:none; z-index:10;">
+  🎉 Happy Birthday! That's All i Can Do as a Programmer... At least for now, Maybe if we see each other in 4K something will Change 😊🎉
+  <br/>
   <div>
     <a href="cake.html" class="btn">next</a>
   </div>
-  🎉 Happy Birthday! That's All i Can Do as a Programmer... At least for now, Maybe if we see each other in 4K something will Change 😊🎉
-  <br/>
 </div>
+
 <div class="velas">
   <div class="fuego"></div>
   <div class="fuego"></div>
@@ -158,8 +159,7 @@
             <div class="flap"></div>
             <div class="seal">
               <span class="emoji">💌</span>
-              <span>Tap "Open Card"</span>
-              <span class="hint">Swipe up to open</span>
+              <span>Tap "Birthday Card"</span>
             </div>
           </div>
           <div class="panel message" id="msg">
@@ -212,7 +212,7 @@
         current += line[j++];
         el.innerHTML = arr.slice(0,i).map(s=>`<div>${s}</div>`).join('') + `<div>${current}</div>`;
         setTimeout(step, speed);
-      } else { i++; j=0; current=''; setTimeout(step, 500); }
+      } else { i++; j=0; current=''; setTimeout(step, 2000); }
     }
     step();
   }
