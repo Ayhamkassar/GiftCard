@@ -102,6 +102,13 @@
   z-index: 11;
   display: none;
 }
+.nextBtn{
+  position: relative;       /* بدل fixed/absolute */
+  top: 220px;               /* تحريك تحت الوردة */
+  transform: none;          /* إزالة أي دوران */
+  z-index: 12;              /* فوق الوردة */
+  display: inline-block;
+}
   </style>
 </head>
 <body>
@@ -111,7 +118,12 @@
   <canvas id="magicParticles"></canvas>
 <div class="flower-message" id="flowerMessage" style="display:none; z-index:10;">
   🎉 Happy Birthday! That's All i Can Do as a Programmer... At least for now, Maybe if we see each other in 4K something will Change 😊🎉
+  <br/>
+  <div>
+    <a href="cake.html" class="btn">next</a>
+  </div>
 </div>
+
 <div class="velas">
   <div class="fuego"></div>
   <div class="fuego"></div>
@@ -124,7 +136,6 @@
   <div class="leaf" style="top:60px; left:-20px;"></div>
   <div class="leaf" style="top:120px; left:10px; transform: scaleX(-1);"></div>
   <div class="flower-top" id="flowerTop"></div>
-  <a href="cake.html" class="btn" id="replay">next</a>
 </div>
 
   <div class="wrap" id="wrap">
